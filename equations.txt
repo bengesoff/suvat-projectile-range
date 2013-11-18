@@ -1,0 +1,24 @@
+Horizontal Distance (Range):
+    
+    
+    
+Velocity:
+    
+    
+    
+Angle:
+    
+    
+    
+Acceleration:
+    
+    
+    
+Time in the air:
+    
+    
+    
+Vertical height change:
+    
+    
+    
