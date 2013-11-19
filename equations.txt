@@ -20,5 +20,5 @@ Time in the air:
     
 Vertical height change:
     
-    Sv = (vsin(th) * t) + (0.5 * a * t^2)
+    Sv = (vsin(th) * t) + (0.5 * a * t^2)            v    th    t    a
     
