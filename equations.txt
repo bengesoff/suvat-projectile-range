@@ -1,5 +1,5 @@
 Horizontal Distance (Range):
-    Range = v * cos(th) * t           v   th  t
+    Sh =    v * cos(th) * t        v   th  t
     
     
 Velocity:
@@ -7,18 +7,18 @@ Velocity:
     
     
 Angle:
-    
+    th = cos^(-1)((-0.5 * a * t^2 - Sh) / (v * t))             a    t   Sh  v
     
     
 Acceleration:
-    
+    [-2 * v * cos(th) * t + 2 * Sh] / t^2
     
     
 Time in the air:
-    t = (-(vsin(th)) +- sqrt((vsin(th))^2 - 4 * (-0.5 * a) * (-S))) / -a         v   th  a   S
-    
+    t = (-(vsin(th)) +- sqrt((vsin(th))^2 - 4 * (-0.5 * a) * (-S))) / -a         v   th  a   S      
+  OR   t = (-(vcos(th)) +- sqrt((vcos(th))^2 - 4 * (-0.5 * a) * (-S))) / -a         v   th  a   S
     
 Vertical height change:
     
-    
+    Sv = (vsin(th) * t) + (0.5 * a * t^2)
     
