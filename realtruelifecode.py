@@ -1,0 +1,6 @@
+print("Enter the variable you wish to determine:")
+print("Horizontal range (= Sh)")
+print("Velocity (= v)")
+print("Angle (= a)")
+print("Vertical displacement (= Sv)")
+print("Time (=t)")
