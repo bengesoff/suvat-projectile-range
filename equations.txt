@@ -15,8 +15,8 @@ Acceleration:
     [-2 * v * sin(th) * t + 2 * Sv] / t^2
     
 Time in the air:
-    t = (-(vsin(th)) +- sqrt((vsin(th))^2 - 4 * (-0.5 * a) * (-S))) / -a         v   th  a   S      
-  OR   t = (-(vcos(th)) +- sqrt((vcos(th))^2 - 4 * (-0.5 * a) * (-S))) / -a         v   th  a   S
+    t = (-(vsin(th)) +- sqrt((vsin(th))^2 - 4 * (-0.5 * a) * (-Sv))) / -a         v   th  a   Sv      
+  OR   t = (-(vcos(th)) +- sqrt((vcos(th))^2 - 4 * (-0.5 * a) * (-Sh))) / -a         v   th  a   Sh
     
 Vertical height change:
     
