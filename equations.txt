@@ -3,16 +3,16 @@ Horizontal Distance (Range):
     
     
 Velocity:
-    v = (0.5 * a * t^2 + S) / sin(th) * t           a   t   th  S
-    
+    v = (0.5 * a * t^2 + Sv) / sin(th) * t           a   t   th  Sv
+ OR v = (0.5 * a *t^2 + Sh) / cos(th) * t             a t th Sh
     
 Angle:
     th = cos^(-1)((-0.5 * a * t^2 - Sh) / (v * t))             a    t   Sh  v
-    
+    th = sin^(-1)((-0.5 * a * t^2 - Sv) / (v * t))
     
 Acceleration:
     [-2 * v * cos(th) * t + 2 * Sh] / t^2
-    
+    [-2 * v * sin(th) * t + 2 * Sv] / t^2
     
 Time in the air:
     t = (-(vsin(th)) +- sqrt((vsin(th))^2 - 4 * (-0.5 * a) * (-S))) / -a         v   th  a   S      
