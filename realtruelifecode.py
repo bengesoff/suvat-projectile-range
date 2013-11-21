@@ -1,4 +1,5 @@
 import sys
+import math
 
 # A list of variables required to work out each variable.
 Sh = ("v", "th", "t")
@@ -12,7 +13,7 @@ a2 = ("v", "t", "Sv", "th")
 t1 = ("v", "th", "a", "Sv")
 t2 = ("v", "th", "a", "Sh")
 
-def askinput():   
+def ask_initial_input():   
     # Print greeting and valid inputs.
     print("Horizontal range (= Sh)")
     print("Velocity (= v)")
@@ -37,4 +38,26 @@ def askinput():
             break
         i = i + 1
     print("Good choice, I like " + variable + " too!")
-variable = askinput()
+    
+def horizontal_range():
+    # Ask user for required variables
+    velocity = input("Please enter the initial velocity of your projectile. [m/s]")
+    angle = input("Please enter the angle at which your projectile is being fired. [degrees]")
+    time = input("Please enter the time that your projectile will be in the air for. [seconds]")
+    # Calculate v.cos(th).t
+    return velocity * math.cos(math.radians(angle)) * time
+    
+def vertical_displacement():
+    # Ask user for required variables
+    acceleration = 9.80665
+    velocity = input("Please enter the initial velocity of your projectile. [m/s]")
+    angle = input("Please enter the angle at which your projectile is being fired. [degrees]")
+    time = input("Please enter the time that your projectile will be in the air for. [seconds]")
+    # Calculate v.sin(th).t + 0.5.a.t^2
+    return (velocity * math.sin(math.radians(angle)) * time) + (0.5 * acceleration * (time ** 2))
+
+variable = ask_initial_input()
+if variable == "Sh":
+    print("The horizontal range of your projectile will be: " + horizontal_range() + "m")
+if variable == "Sv":
+    print("The vertical displacement of your projectile will be: " + vertical_displacement() + "m")
