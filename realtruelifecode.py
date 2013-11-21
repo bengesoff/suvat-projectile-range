@@ -38,7 +38,21 @@ def ask_initial_input():
             break
         i = i + 1
     print("Good choice, I like " + variable + " too!")
-    
+  
+def velocity():
+    # function for finding the projectile's velocity
+    while True:
+        i = input("Enter the letter h if you know the horizontal range of your projectile, or letter v if you know the vertical displacement.")
+        if i == "h":
+            acceleration = 9.80665
+            time = input("Please enter the time for which your projectile is in the air")
+            angle = input("Please enter the angle at which your projectile is launched")
+            horizontal_range = input("Please enter the range your projectile travelled, for which I shall circumstantially be very upset if you do not know it")
+            break
+        else if i == "v":
+            break
+        else:
+            print("No you silly... enter v or h, otherwise this message will monotonously repeat itslef until you desist")
 def horizontal_range():
     # Ask user for required variables
     velocity = input("Please enter the initial velocity of your projectile. [m/s]")
