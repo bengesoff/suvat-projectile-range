@@ -42,14 +42,25 @@ def ask_initial_input():
 def velocity():
     # function for finding the projectile's velocity
     while True:
+        # Determine which equation to use
         i = input("Enter the letter h if you know the horizontal range of your projectile, or letter v if you know the vertical displacement.")
         if i == "h":
+            # Constant for average accleration due to gravity
             acceleration = 9.80665
+            # Ask user for required variables
             time = input("Please enter the time for which your projectile is in the air")
             angle = input("Please enter the angle at which your projectile is launched")
             horizontal_range = input("Please enter the range your projectile travelled, for which I shall circumstantially be very upset if you do not know it")
+            return (0.5 * acceleration * (time ** 2) + horizontal_range) / (math.cos(angle.radians()) * time)
             break
         else if i == "v":
+            # Constant for average accleration due to gravity
+            acceleration = 9.80665
+            # Ask user for required variables
+            time = input("Please enter the time for which your projectile is in the air")
+            angle = input("Please enter the angle at which your projectile is launched")
+            vertical_displacement = input("Please enter the vertical displacement that your projectile travelled, for which I shall circumstantially be very upset if you do not know it")
+            return (0.5 * acceleration * (time ** 2) + vertical_displacement) / (math.sin(angle.radians()) * time)
             break
         else:
             print("No you silly... enter v or h, otherwise this message will monotonously repeat itslef until you desist")
