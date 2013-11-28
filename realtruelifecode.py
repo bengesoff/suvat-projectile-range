@@ -81,6 +81,7 @@ def vertical_displacement():
     # Calculate v.sin(th).t + 0.5.a.t^2
     return (velocity * math.sin(math.radians(angle)) * time) + (0.5 * acceleration * (time ** 2))
 
+
 variable = ask_initial_input()
 if variable == "Sh":
     print("The horizontal range of your projectile will be: " + horizontal_range() + "m")
