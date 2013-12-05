@@ -64,7 +64,7 @@ def velocity():
             return (0.5 * acceleration * (time ** 2) + vertical_displacement) / (math.sin(math.radians(angle)) * time)
             break
         else:
-            print("No you silly... enter v or h, otherwise this message will monotonously repeat itslef until you desist")
+            print("No you silly... enter v or h, otherwise this message will monotonously repeat itself until you desist")
 def horizontal_range():
     # Ask user for required variables
     velocity = float(input("Please enter the initial velocity of your projectile. [m/s]"))
